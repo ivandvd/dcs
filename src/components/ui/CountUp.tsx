@@ -17,7 +17,7 @@ type Props = {
 function format(n: number, decimals: number, locale: Locale) {
   const fixed = n.toFixed(decimals);
   const [int, frac] = fixed.split(".");
-  const grouped = Number(int).toLocaleString("en-US").split(",").join(" ");
+  const grouped = Number(int).toLocaleString("en-US").split(",").join("\u00a0");
   return frac ? `${grouped}${locale === "pl" ? "," : "."}${frac}` : grouped;
 }
 
