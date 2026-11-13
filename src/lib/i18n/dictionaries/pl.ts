@@ -1,0 +1,120 @@
+import type { Dictionary, NavItem } from "./en";
+import { homeArea } from "./areas/home";
+import { pagesArea } from "./areas/pages";
+import { catalogArea } from "./areas/catalog";
+import { companyArea } from "./areas/company";
+import { newsArea } from "./areas/news";
+
+export const pl: Dictionary = {
+  locale: { short: "PL", long: "Polski", switchTo: "English", switchLabel: "Switch language to English", label: "Język" },
+  nav: {
+    items: [
+      { label: "Start", href: "/" },
+      { label: "O nas", href: "/about" },
+      {
+        label: "Rozwiązania",
+        href: "/solutions",
+        children: [
+          { label: "Mycie elewacji", href: "/services/cleaning", blurb: "Elewacje szklane, betonowe i kompozytowe" },
+          { label: "Dezynfekcja", href: "/services/disinfection", blurb: "Wielkopowierzchniowa dezynfekcja z powietrza" },
+          { label: "Inspekcje", href: "/services/inspection", blurb: "Obrazowanie HD i dokumentacja" },
+          { label: "Szkolenia", href: "/services/training", blurb: "Certyfikacja STS-01 i STS-02" },
+          { label: "Franczyza", href: "/services/franchise", blurb: "Wprowadź mycie dronem na swój rynek" },
+        ],
+      },
+      { label: "Technologia", href: "/technology" },
+      { label: "Katalog", href: "/catalog" },
+      {
+        label: "Więcej",
+        href: "/news",
+        children: [
+          { label: "Aktualności", href: "/news", blurb: "Nowości, wydarzenia i targi" },
+          { label: "Kariera", href: "/career", blurb: "Dołącz do zespołu DCS" },
+        ],
+      },
+    ] as NavItem[],
+    getQuote: "Zapytaj o wycenę",
+    openMenu: "Otwórz menu",
+    closeMenu: "Zamknij menu",
+    home: "DCS – strona główna",
+    main: "Menu główne",
+  },
+  footer: {
+    eyebrow: "Skontaktuj się",
+    title: "Gotowy na rewolucję w utrzymaniu budynków?",
+    lede: "Prześlij nam zdjęcia, podstawowe wymiary i informacje o powierzchni. Dobierzemy konfigurację i zaproponujemy sposób realizacji prac.",
+    contact: "Kontakt",
+    catalog: "Zobacz katalog",
+    blurb:
+      "Innowacyjne rozwiązania do mycia dronem budynków, elewacji i obiektów przemysłowych. Zmieniamy utrzymanie budynków dzięki nowoczesnej technologii BSP.",
+    solutions: "Rozwiązania",
+    company: "Firma",
+    contactCol: "Kontakt",
+    office: "Biuro",
+    sales: "Dział handlowy",
+    address: "Adres",
+    mailing: "Adres korespondencyjny",
+    officeAddress: "ul. Pucka 35, 81-036 Gdynia, Polska",
+    mailingAddress: "ul. Kwidzyńska 15, 81-306 Gdynia, Polska",
+    rights: "© 2026 DCS – Drone Cleaning Solutions. Wszelkie prawa zastrzeżone.",
+    privacy: "Polityka prywatności",
+    terms: "Regulamin",
+    solutionLinks: [
+      { label: "Mycie dronem", href: "/services/cleaning" },
+      { label: "Dezynfekcja", href: "/services/disinfection" },
+      { label: "Inspekcje dronem", href: "/services/inspection" },
+      { label: "Szkolenia", href: "/services/training" },
+      { label: "Franczyza", href: "/services/franchise" },
+    ],
+    companyLinks: [
+      { label: "O nas", href: "/about" },
+      { label: "Technologia", href: "/technology" },
+      { label: "Rozwiązania", href: "/solutions" },
+      { label: "Katalog", href: "/catalog" },
+      { label: "Aktualności", href: "/news" },
+      { label: "Kariera", href: "/career" },
+      { label: "Kontakt", href: "/contact" },
+    ],
+  },
+  cookie: {
+    title: "Szanujemy Twoją prywatność",
+    body: "Niezbędne pliki cookie zapewniają działanie strony. Za Twoją zgodą używamy też plików analitycznych, aby badać ruch i ulepszać serwis. Szczegóły w naszej",
+    privacy: "Polityce prywatności",
+    acceptAll: "Akceptuj wszystkie",
+    necessary: "Tylko niezbędne",
+  },
+  notFound: {
+    eyebrow: "Błąd 404",
+    title: "Ta strona odleciała bez nas.",
+    lede: "Strona, której szukasz, nie istnieje lub została przeniesiona. Sprowadźmy Cię z powrotem na ziemię.",
+    home: "Wróć na stronę główną",
+    contact: "Skontaktuj się",
+  },
+  contacts: {
+    office: "Biuro",
+    sales: "Dział handlowy",
+    examiner: "Egzaminator",
+    phone: "Telefon",
+    email: "E-mail",
+    hours: "pon.–pt. 8:00–18:00",
+    callOrText: "Zadzwoń lub napisz SMS",
+  },
+  home: homeArea.pl,
+  pages: pagesArea.pl,
+  catalog: catalogArea.pl,
+  company: companyArea.pl,
+  news: newsArea.pl,
+  common: {
+    back: "Wstecz",
+    next: "Dalej",
+    readMore: "Czytaj więcej",
+    learnMore: "Dowiedz się więcej",
+    callUs: "Zadzwoń",
+    sendEmail: "Napisz e-mail",
+    loadModel: "Wczytaj model 3D",
+    loading: "Wczytywanie",
+    dragHint: "Przeciągnij, aby obrócić · scroll = zoom",
+    photos: "Zdjęcia",
+    model3d: "Model 3D",
+  },
+};

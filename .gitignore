@@ -1,0 +1,11 @@
+node_modules
+.next
+out
+.env*
+*.tsbuildinfo
+next-env.d.ts
+.playwright-mcp
+
+# Working material (site scrapes, original downloads, previews, logs) - not part of the website
+incoming/
+*.log
